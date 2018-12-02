@@ -15,14 +15,13 @@
 
   ;; We use profiles instead of individual project.clj files
   :profiles
-
-  {;; ============
+  {
+   ;; ============
    ;; Environments
    ;; ============
 
    ;; We could instead write `:environments/development`, but calling it
    ;; `:dev` means lein turns it on by default (and so does Cursive)
-
    :dev
    [;; Specifying a vector of profiles causes them to be merged with this one
     :bases/mybase
@@ -32,7 +31,7 @@
      :global-vars  {*warn-on-reflection* true}
      :plugins      [[com.jakemccrary/lein-test-refresh "0.23.0"]]
      :test-refresh {:changes-only true}}]
-   
+
    ;; ==========
    ;; Interfaces
    ;; ==========
@@ -47,10 +46,6 @@
     :description  "Component interfaces"
     :source-paths ["src/interfaces"]
     :aot          :all}
-
-   ;; =============================
-   ;; Using pre-compiled interfaces
-   ;; =============================
 
    ;; Use this profile to use the installed interface jar when compiling:
    ;; `lein with-profile interfaces-jar,bases/mybase compile`
