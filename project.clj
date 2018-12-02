@@ -32,12 +32,7 @@
      :global-vars  {*warn-on-reflection* true}
      :plugins      [[com.jakemccrary/lein-test-refresh "0.23.0"]]
      :test-refresh {:changes-only true}}]
-
-   ;; Set the test profile (which lein uses for tests) to be a copy of :dev,
-   ;; now you can run all tests with `lein test` or `lein test-refresh`
-   :test
-   [:dev]
-
+   
    ;; ==========
    ;; Interfaces
    ;; ==========
