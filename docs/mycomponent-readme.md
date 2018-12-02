@@ -1,0 +1,3 @@
+# mycomponent component
+
+add documentation here...

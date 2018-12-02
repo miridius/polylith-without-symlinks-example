@@ -3,7 +3,7 @@
 **/.idea
 *.iml
 .nrepl-port
-.lein-env
+.lein-*
 crash.log
 .polylith/time.edn
 .polylith/git.edn
